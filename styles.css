@@ -1,0 +1,255 @@
+body {
+	margin: 50px;
+	display: block;
+}
+#wrapper {
+	border: 1px solid black;
+	max-width: 80%;
+	min-width: 800px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 15px 5px #000000;
+	background-color: black;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+header {
+	border: 1px solid black;
+	background-color: white;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+}
+#server1 {
+	float:left;
+	max-height: 126px;
+	min-height: 126px;
+	border-top-left-radius: 30px;
+}
+#server2 {
+	float:right;
+	max-height: 126px;
+	min-height: 126px;
+	border-top-right-radius: 30px;
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	padding: 29px;
+}
+nav {
+	max-width: 10%;
+	margin: 0;
+	float: left;
+}
+#navMobile {
+	display: none;
+}
+ul {
+	min-width: 130px;
+	margin: 0;
+	padding-left: 0;
+	padding: 0;
+	border-bottom: 0px solid black;
+	margin-top: 10px;
+}
+li {
+	list-style: none;
+	padding: 10px;
+	font-size: 35px;
+	background-size: 130px;
+	background-repeat: no-repeat;
+	padding: 10px;
+	padding-left: 0;
+}
+li img {
+	width: 120px;
+}
+li a {
+	text-decoration: none;
+	color: black;
+}
+li a:hover {
+	text-decoration: none;
+	color: black;
+}
+main {
+	margin-left: 145px;
+	padding-left: 25px;
+	border: 1px solid black;
+	background-color: white;
+	max-width: 1920px;
+}
+main img {
+	max-height: 256px;
+	min-height: 256px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#fac-wrapper {
+	border: 1px solid black;
+	border-radius: 50px;
+	box-shadow: 5px 5px 15px 5px #000000;
+	margin: 0 auto;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#fac-wrapper img {
+	min-height: 128px;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+#fac-wrapper h3 {
+	font-size: 30px;
+	margin: 10px;
+}
+#fac-wrapper p {
+	padding-left:25px;
+}
+h2 {
+	font-size: 40px;
+	text-align: center;
+	padding: 10px;
+}
+p {
+	font-size: 20px;
+	padding-right: 25px;
+}
+.info {
+	font-size: 15px;
+	margin: 0;
+}
+.desktop,
+.mobile {
+	font-size: 15px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.mobile {
+	display: none;
+}
+footer {
+	text-align: center;
+	font-style: italic;
+	border: 1px solid black;
+	background-color: white;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding: 4px;
+}
+#main-wrapper {
+	margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 1400px){
+	h1 {
+		font-size: 30px;
+		padding: 15px;
+	}
+	#server1 {
+		float:left;
+		max-height:74px;
+		min-height: 74px;
+		border-top-left-radius: 30px;
+	}
+	#server2 {
+		float:right;
+		max-height:74px;
+		min-height: 74px;
+		border-top-right-radius: 30px;
+	}
+}
+
+
+@media only screen and (max-width: 1024px){
+	body {
+		background-image: none;
+		margin: 0;
+	}
+	#wrapper {
+		width: 100%;
+		border: none;
+		max-width: unset;
+		min-width: unset;
+		box-shadow: none;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	header {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+	footer {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	#server1,
+	#server2 {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
+
+
+@media only screen and (max-width: 768px){
+	header {
+		position: fixed;
+		min-width: 100%;
+		z-index: 3;
+	}
+	header h1 {
+		padding-top: 22px;
+		font-size: 19px;
+	}
+	nav {
+		float: none;
+		position: fixed;
+		max-height: 74px;
+		z-index: 8;
+	}
+	#desktop-nav {
+		display: none;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: inline;
+		top: 0;
+	}
+	#navMobile {
+		margin: 0 auto;
+		text-align: center;
+		display: inline;
+		position: fixed;
+		background-color: black;
+		max-width: 100%;
+		min-width: 100%;
+		margin-top: 74px;
+		height: 50px;
+		padding-top: 3px;
+	}
+	#navMobile a {
+		text-align: center;
+		list-style: none;
+		padding-right: 0;
+		font-size: 35px;
+		margin: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#navMobile img {
+		width: 140px;
+		vertical-align:top;
+	}
+	main {
+		margin-left: 0;
+		padding-top: 135px;
+		padding-bottom: 10px;
+		z-index: 1;
+	}
+}
